@@ -1,0 +1,124 @@
+/* Style for the back button */
+.back {
+    width: 100px;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #ec9214;
+  }
+  
+  .back:hover {
+    background-color: white;
+    color: #ec9214;
+  }
+  
+  .back a {
+    text-decoration: none;
+  }
+  
+  /* Container for the complaint form */
+  .complaint-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border-radius: 20%;
+  }
+  
+  /* Logo styling */
+  .logo {
+    width: 100%;
+    height: auto;
+    max-height: 600px; /* Adjust the max-height as needed for mobile screens */
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  
+  /* Complaint form styling */
+  .complaint-form {
+    width: calc(100% - 40px); /* Adjusted width for smaller screens */
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin: 20px;
+  }
+  
+  /* Heading style */
+  .complaint-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Input container style */
+  .input-container {
+    margin-bottom: 15px;
+  }
+  
+  /* Label style */
+  .input-container label {
+    font-weight: bold;
+  }
+  
+  /* Input style */
+  .input-container input[type="text"],
+  .input-container input[type="date"],
+  .input-container input[type="time"],
+  .input-container select,
+  .input-container textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  
+  /* Textarea style */
+  .input-container textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* Error message style */
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Button style */
+  button {
+    width: 100%; /* Button takes full width */
+    padding: 10px 20px;
+    background-color: #efaa17;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px; /* Added margin for better spacing */
+  }
+  
+  button:hover {
+    background-color: transparent;
+    color: #ec9214;
+  }
+  
+  /* Media Query for Mobile Screens */
+  @media only screen and (max-width: 600px) {
+    .complaint-form {
+        margin: 10px;
+        padding: 15px;
+    }
+    .back{
+      width: 100px;
+    }
+  
+    .logo {
+        max-height: 200px; /* Adjusted max-height for smaller screens */
+    }
+  
+    button {
+        margin-top: 15px; /* Increased margin for better spacing */
+    }
+  }
+  

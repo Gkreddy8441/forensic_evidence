@@ -1,0 +1,112 @@
+/* Container styles */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Changed height to min-height for better responsiveness */
+    background-color: #f0f0f0;
+  }
+  
+  /* Content styles */
+  .content {
+    width: 90%; /* Adjusted width for mobile screens */
+    max-width: 500px; /* Added max-width for better scaling */
+    display: flex;
+    flex-direction: column; /* Adjusted to column layout for mobile screens */
+    align-items: center;
+  }
+  
+  /* Left content styles */
+  .left-content {
+    width: 100%; /* Adjusted width for mobile screens */
+    text-align: center;
+  }
+  
+  /* Image styles */
+  .image {
+    width: 80px; /* Adjusted size for mobile screens */
+    height: 80px; /* Adjusted size for mobile screens */
+    margin-bottom: 10px; /* Decreased margin for better spacing */
+  }
+  
+  /* Label styles */
+  .label {
+    font-size: 20px; /* Adjusted font size for mobile screens */
+    font-weight: bold;
+    margin-bottom: 10px; /* Decreased margin for better spacing */
+  }
+  
+  /* Signup form styles */
+  .signup-form {
+    width: 90%; /* Adjusted width for mobile screens */
+    max-width: 500px; /* Added max-width for better scaling */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 10px; /* Added margin-top for better spacing */
+  }
+  
+  /* Signup form title styles */
+  .signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styles */
+  form {
+    background-color: #ec921434; /* Adjusted background color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    padding: 20px; /* Increased padding for better spacing */
+  }
+  
+  /* Label styles within form */
+  label {
+    margin-bottom: 10px;
+    color:black; /* Adjusted label color */
+    margin-top: 10px;
+  }
+  
+  /* Input field styles */
+  .type {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Button styles */
+  button.btn1 {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ec9214;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  /* Hover effect for button */
+  button.btn1:hover {
+    background-color: white;
+    color: #ec9214;
+  }
+  
+  /* Media Query for Mobile Screens */
+  @media only screen and (max-width: 600px) {
+    .signup-form,
+    .content {
+      width: 90%;
+      max-width: 100%;
+    }
+  }

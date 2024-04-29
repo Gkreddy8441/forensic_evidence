@@ -1,0 +1,96 @@
+.hero {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.h{
+    width: 100%;
+    height: auto; /* Adjust the max-height as needed */
+    margin-top: 10px;
+}
+h1{
+    text-align: center;
+}
+.hero img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.hero-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+    color: white;
+    padding: 0.5rem 0 2rem 0;
+    text-align: center;
+}
+
+.connecttowallet {
+    position: absolute;
+    top: 7%;
+    right: 2%;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+.btn{
+    padding: 10px 20px;
+    background-color: #ec9214;
+    color: white;
+}
+
+.connecttowallet button:hover {
+    background-color: white;
+    color:  #ec9214;
+    border: 1px solid white;
+    cursor: pointer;
+    
+}
+
+.connecttowallet button:hover a {
+    color:  #ec9214;
+    border: 1px solid white;
+}
+
+
+.connecttowallet a {
+    text-decoration: none;
+    color:  white;
+}
+
+
+@media screen and (max-width: 480px) {
+    .hero img {
+        height: 60vh;
+    }
+    .hero-text h1 {
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .hero-text p {
+        font-size: 1rem;
+        padding: 0 0 1rem 0;
+    }
+    .connecttowallet {
+        position: absolute;
+        top: 14%;
+        right: 4%;
+        padding: 10px;
+        margin-right: 10px;
+    }
+}
+

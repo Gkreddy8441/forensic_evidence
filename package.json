@@ -1,0 +1,25 @@
+{
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "name": "forensic_evidence",
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "prebuild": "npm run prebuild --workspaces --if-present",
+    "pretest": "npm run prebuild --workspaces --if-present",
+    "start": "npm start --workspaces --if-present",
+    "test": "npm test --workspaces --if-present"
+  },
+  "type": "module",
+  "workspaces": [
+    "src/forensic_evidence_frontend"
+  ],
+  "dependencies": {
+    "@dfinity/auth-client": "^1.2.1",
+    "auth-client": "^0.4.11",
+    "principal": "^0.1.0",
+    "react-icons": "^5.1.0",
+    "react-router-dom": "^6.23.0"
+  }
+}

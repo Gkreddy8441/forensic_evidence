@@ -1,0 +1,230 @@
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e96c19;
+    min-height: 100vh;
+  }
+  
+  .navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #e96c19;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .logo1 {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .logo1:hover {
+    transform: rotate(360deg);
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .nav-heading {
+    margin-left: 10px;
+  }
+  
+  .profile {
+    position: relative;
+  }
+  
+  .hamburger {
+    display: block;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hamburger-box {
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .hamburger-inner {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease;
+  }
+  
+  .hamburger.is-active .hamburger-inner {
+    background-color: transparent;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .dropdown-menu.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .dropdown-box {
+    align-items: center;
+    height: 250px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    border-radius: 20px;
+  }
+  
+  .dropdown-box:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown-box a.button {
+    display: block;
+    padding: 10px 0;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dropdown-box a.button:hover {
+    background-color: white;
+    color: #ec8c3e;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .social-icons svg {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    fill: #333;
+  }
+  
+  .profile-body1 {
+    position: relative;
+  }
+  
+  .blur-effect {
+    filter: blur(3px);
+  }
+  
+  .profile-section {
+    margin-top: 35px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(244, 162, 9, 0.653);
+    color: #e96c19;
+  }
+  
+  .blurred {
+    filter: blur(5px);
+  }
+  
+  .tools {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .box {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .profile-pic {
+    margin-bottom: 20px;
+  }
+  
+  .profile-info p {
+    margin: 5px 0;
+  }
+  
+  .profile-info b {
+    font-weight: bold;
+  }
+  
+  /* Media Query for Mobile Screens */
+  /* @media only screen and (max-width: 600px) {
+    .navbar1 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo {
+      margin-top: 10px;
+    }
+  
+    .hamburger-box {
+      margin-top: 10px;
+    }
+  
+    .dropdown-menu {
+      top: unset;
+      left: 0;
+      width: 100%;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  
+    .dropdown-box {
+      height: auto;
+      border-radius: 0;
+      border-bottom: 1px solid black;
+    }
+  
+    .dropdown-box:last-child {
+      border-bottom: none;
+    }
+  
+    .circle {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .box {
+      width: 25px;
+      height: 25px;
+    }
+  } */
+  

@@ -1,0 +1,64 @@
+.back {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #ec9214;
+  }
+  
+  .back:hover {
+    background-color: white;
+    color: #ec9214;
+  }
+  
+  .back a {
+    text-decoration: none;
+  }
+  
+  .fetch-evidence-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border-radius: 20%;
+  }
+  
+  .logo {
+    width: 100%;
+    height: auto;
+    max-height: 600px; /* Adjust the max-height as needed for mobile screens */
+    margin: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2;
+  }
+  
+  th, td {
+    padding: 8px;
+    border: 1px solid #473904;
+    text-align: left;
+    border-radius: 50%; /* Decreased border radius for mobile screens */
+  }
+  
+  th {
+    background-color: #f3b823;
+    text-align: center;
+  }
+  
+  /* Media Query for Mobile Screens */
+  @media only screen and (max-width: 600px) {
+    .fetch-evidence-container {
+        margin: 10px;
+    }
+  
+    .logo {
+        max-height: 200px; /* Adjusted max-height for smaller screens */
+        margin: 5px;
+    }
+  
+    th, td {
+        padding: 5px;
+        border-radius: 5px;
+    }
+  }

@@ -1,0 +1,37 @@
+{
+  "canisters": {
+    "forensic_evidence_backend": {
+      "main": "src/forensic_evidence_backend/main.mo",
+      "type": "motoko"
+    },
+    "forensic_evidence_frontend": {
+      "dependencies": [
+        "forensic_evidence_backend"
+      ],
+      "source": [
+        "src/forensic_evidence_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "forensic_evidence_frontend"
+    },
+    "internet_identity": {
+      "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+      "frontend": {},
+      "remote": {
+        "id": {
+          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+        }
+      },
+      "type": "custom",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
